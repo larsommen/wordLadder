@@ -19,9 +19,9 @@ public class wordLadders {
 
  	public static void main(String[] args) {
  		   st = new ST<String, Integer>();
-
+           int index = 0;
         while (!StdIn.isEmpty()) {
-        	int index = 0;
+        	
             String a = StdIn.readLine();
             st.put(a, index);
             index ++;
@@ -44,6 +44,8 @@ public class wordLadders {
         		}
         	}
         }
+
+        System.out.println(G.toString());
     }
 }
 
